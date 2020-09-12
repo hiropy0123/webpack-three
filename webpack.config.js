@@ -75,9 +75,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: `${__dirname}/static/*`,
-          to: `${__dirname}/dist/`,
-          flatten: true
+          from: `${__dirname}/static/`,
+          to: `${__dirname}/dist`
         }
       ]
     }),

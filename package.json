@@ -11,16 +11,16 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
     "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^6.0.3",
-    "css-loader": "^4.2.0",
-    "html-webpack-plugin": "^4.3.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.4.1",
     "import-glob-loader": "^1.1.0",
     "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.2",
+    "sass-loader": "^10.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
@@ -28,6 +28,6 @@
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
-    "three": "^0.119.1"
+    "three": "^0.120.1"
   }
 }
