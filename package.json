@@ -1,33 +1,33 @@
 {
   "name": "webpack-threejs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": "./src/index.js",
   "author": "HirokiNakashima <hiroki123naka4ma@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack serve",
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^6.1.0",
-    "css-loader": "^4.3.0",
-    "html-webpack-plugin": "^4.4.1",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
     "import-glob-loader": "^1.1.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.2",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
     "webpack-dev-server": "^3.11.0",
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
-    "three": "^0.120.1"
+    "three": "^0.124.0"
   }
 }

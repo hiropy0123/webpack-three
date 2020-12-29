@@ -9,7 +9,7 @@ function init() {
 
   // レンダラーの作成
   const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('#mycanvas')
+    canvas: document.querySelector('#canvas')
   })
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(width, height)
