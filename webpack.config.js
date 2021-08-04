@@ -1,6 +1,7 @@
-const WriteFilePlugin   = require('write-file-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+// import MiniCssExtractPlugin from "mini-css-extract-plugin";
+// import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
+const CopyPlugin = require("copy-webpack-plugin");
 
 // 'production' か 'development' を指定
 const MODE = 'development';
@@ -70,8 +71,8 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.json']
   },
+  target: ["web"],
   plugins: [
-    new WriteFilePlugin(),
     new CopyPlugin({
       patterns: [
         {
@@ -84,22 +85,4 @@ module.exports = {
       template: `${__dirname}/src/index.html`
     })
   ],
-  performance: { 
-    hints: false,
-    maxAssetSize: 30000,
-    maxEntrypointSize: 1000 
-  },
-  // externals: {
-  //   // jQueryのレガシープラグインを使用する場合は、
-  //   // jQueryをWebpack内部に取り込まず、外部参照する。
-  //   // HTMLファイルでjqueryとプラグインのファイルを個別読み込み
-  //   'jquery': '$'
-  // },
-  // Configuration for dev server
-  devServer: {
-    contentBase: `${__dirname}/dist/`,
-    watchContentBase: true,
-    open: true,
-    port: 3333
-  },
 };
